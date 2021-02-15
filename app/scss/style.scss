@@ -1,0 +1,57 @@
+@import "./reset.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+
+.body {
+	box-sizing: border-box;
+}
+
+.container {
+	min-width: 320px;
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 34px 0;
+}
+.logo__link {
+	display: block;
+	width: 45px;
+	height: 30px;
+	background-image: url(../img/Logo.png);
+}
+.menu__burger {
+	width: 27px;
+	height: 15px;
+	background-image: url(../img/burger_menu.png);
+	margin: 9px 105px 0 0;
+}
+
+// @media (max-width: 1500px) {
+
+// 	.container {
+// 		max-width: 800px;
+// 		margin: 0 auto;
+// 	}
+	
+// 	.header__top-inner {
+// 		 justify-content: center;
+// 	}
+
+// 	.menu__burger {
+// 		margin-left: auto;
+// 		margin-top: 9px;
+// 	}
+// }
+
+// @media (max-width: 768px) {
+	// .container {
+	// 	max-width: 1160;
+	// }
+	// .header__top-inner {
+		// justify-content: space-evenly;
+	// }
+// }
