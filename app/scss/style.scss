@@ -2,8 +2,9 @@
 @import "./fonts.scss";
 @import "./variables.scss";
 
-.body {
+body {
 	box-sizing: border-box;
+	background-color: $background-primary-color;
 }
 
 .container {
@@ -21,8 +22,8 @@
 	display: block;
 	width: 45px;
 	height: 30px;
-	background-image: url(../img/Logo.png);
 }
+
 .menu__burger {
 	width: 27px;
 	height: 15px;
@@ -54,58 +55,40 @@
 	max-width: 360px;
 	text-align: center;
 	font-family: $font-family-primary;
-	color: $text-subtitle-prime-color;
+	color: $text-subtitle-primary-color;
 	font-size: 20px;
 	line-height: 32px;
 	letter-spacing: -1px;
 	margin-bottom: 250px;
 }
 
-// @media (max-width: 1500px) {
+@media (max-width: 1200px) {
+	.container {
+		max-width: 1000px;
+	}
+	.header__top-inner {
+		justify-content: space-around;
+	}
+	.menu__burger {
+		margin: 9px 0 0 0;
+	}
+}
 
-// 	.container {
-// 		max-width: 1160px;
-// 		margin: 0 auto;
-// 	}
+@media (max-width: 992px) {
+	.container {
+		max-width: 750;
+	}
+}
 
-// 	.header__top-inner {
-// 		 justify-content: center;
-// 	}
+@media (max-width: 767px) {
+	.container {
+		max-width: 500px;
+	}
+}
 
-// 	.menu__burger {
-// 		margin-left: auto;
-// 		margin-top: 9px;
-// 	}
-// }
-
-// @media (max-width: 1200px) {
-// .container {
-// 	max-width: 970;
-// }
-// .header__top-inner {
-// justify-content: space-evenly;
-// }
-// }
-
-// @media (max-width: 992px) {
-// .container {
-// 	max-width: 750;
-// }
-// .header__top-inner {
-// justify-content: space-evenly;
-// }
-// }
-
-// @media (max-width: 767px) {
-// .container {
-// 	max-width: 500;
-// }
-// .header__top-inner {
-// justify-content: space-evenly;
-// }
-// }
 .introduction-cards__wrapper {
 	display: flex;
+	margin-bottom: 200px;
 }
 
 .introduction-card__item {
@@ -113,30 +96,130 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-basis: 33.3%;
+
+	&--choosen {
+		box-shadow: 2px 5px 3px #ebecec;
+		border-left: none;
+		border-top: none;
 	}
+}
+
+.introduction-card__icon {
+	margin-top: 70px;
+	height: 77px;
+}
 
 .introduction-card__title {
 	font-family: $font-family-secondary;
-	color: $text-subtitle-prime-color;
+	color: $text-subtitle-primary-color;
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: -1px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .introduction-card__description {
 	font-family: $font-family-primary;
-	color: $text-description-prime-color;
+	color: $text-description-primary-color;
 	font-size: 15px;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 32px;
 	text-align: center;
 	letter-spacing: 1px;
-	margin: 30px 0 65px 0;
+	max-width: 270px;
+	margin: 20px 0 45px 0;
 }
 
-.introduction-card__icon {
-	margin-top: 80px;
-	height: 77px;
+@media (max-width: 992px) {
+	.introduction-cards__wrapper {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.introduction-card__item {
+		flex-basis: 40%;
+	}
+}
+
+@media (max-width: 767px) {
+	.introduction-cards__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.introduction-card__item {
+		flex-basis: 80%;
+		margin: 0 auto;
+	}
+}
+
+.services-title__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.services__title {
+	color: $text-title-section-primary-color;
+	font-family: $font-family-secondary;
+	font-size: 162px;
+	line-height: 195px;
+	letter-spacing: -8px;
+}
+.services__description {
+	color: $text-description-primary-color;
+	font-family: $font-family-primary;
+	font-size: 25px;
+	letter-spacing: -1px;
+	margin-top: -74px;
+}
+.services-cards__inner {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 830px;
+	margin-top: 140px;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url(../img/right-side_decor_image.png);
+		width: 340px;
+		height: 436px;
+	}
+}
+.services-cards__item {
+	flex-basis: 315px;
+	margin-bottom: 20px;
+	padding-left: 85px;
+	position: relative;
+}
+
+	.services-cards__title {
+	color: $text-subtitle-secondary-color;
+	font-family: $font-family-secondary;
+	font-size: 20px;
+	line-height: 67px;
+}
+
+.services-cards__icon {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.services-cards-description {
+	color: $text-description-secondary-color;
+	font-family: $font-family-primary;
+	line-height: 27px;
+	font-size: 15px;
+	font-style: normal;
+	letter-spacing: -1px;
+	max-width: 270px;
 }
