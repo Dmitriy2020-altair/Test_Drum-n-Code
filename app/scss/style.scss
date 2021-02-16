@@ -15,7 +15,7 @@
 .header__top-inner {
 	display: flex;
 	justify-content: space-between;
-	padding: 34px 0;
+	margin: 34px 0 27px 0;
 }
 .logo__link {
 	display: block;
@@ -30,13 +30,44 @@
 	margin: 9px 105px 0 0;
 }
 
+.header-content {
+	background-color: $background-secondary-color;
+}
+
+.header-content__inner-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-content__title {
+	font-family: $font-family-secondary;
+	color: $text-title-colored;
+	font-size: 55px;
+	font-weight: 400;
+	letter-spacing: -3px;
+	margin: 51px 0;
+}
+
+.header-content__description {
+	max-width: 360px;
+	text-align: center;
+	font-family: $font-family-primary;
+	color: $text-subtitle-prime-color;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: -1px;
+	margin-bottom: 250px;
+}
+
 // @media (max-width: 1500px) {
 
 // 	.container {
-// 		max-width: 800px;
+// 		max-width: 1160px;
 // 		margin: 0 auto;
 // 	}
-	
+
 // 	.header__top-inner {
 // 		 justify-content: center;
 // 	}
@@ -47,11 +78,64 @@
 // 	}
 // }
 
-// @media (max-width: 768px) {
-	// .container {
-	// 	max-width: 1160;
-	// }
-	// .header__top-inner {
-		// justify-content: space-evenly;
-	// }
+// @media (max-width: 1200px) {
+// .container {
+// 	max-width: 970;
 // }
+// .header__top-inner {
+// justify-content: space-evenly;
+// }
+// }
+
+// @media (max-width: 992px) {
+// .container {
+// 	max-width: 750;
+// }
+// .header__top-inner {
+// justify-content: space-evenly;
+// }
+// }
+
+// @media (max-width: 767px) {
+// .container {
+// 	max-width: 500;
+// }
+// .header__top-inner {
+// justify-content: space-evenly;
+// }
+// }
+.introduction-cards__wrapper {
+	display: flex;
+}
+
+.introduction-card__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+
+.introduction-card__title {
+	font-family: $font-family-secondary;
+	color: $text-subtitle-prime-color;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	margin-top: 50px;
+}
+
+.introduction-card__description {
+	font-family: $font-family-primary;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 30px 0 65px 0;
+}
+
+.introduction-card__icon {
+	margin-top: 80px;
+	height: 77px;
+}
