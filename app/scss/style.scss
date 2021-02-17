@@ -185,14 +185,17 @@ body {
 	&::after {
 		content: "";
 		display: block;
+		width: 340px;
+		height: 440px;
 		position: absolute;
 		top: -8%;
 		right: -37%;
 		background-image: url(../img/right-side_decor_image.png);
-		width: 340px;
-		height: 436px;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
+
 .services-cards__item {
 	flex-basis: 315px;
 	padding-left: 85px;
@@ -235,12 +238,14 @@ body {
 		&::after {
 			content: "";
 			display: block;
+			width: 300px;
+			height: 400px;
 			position: absolute;
-			top: 0%;
+			top: 0;
 			right: -100%;
 			background-image: url(../img/right-side_decor_image.png);
-			width: 340px;
-			height: 436px;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 }
@@ -259,12 +264,14 @@ body {
 		&::after {
 			content: "";
 			display: block;
+			width: 300px;
+			height: 400px;
 			position: absolute;
-			top: 0%;
-			right: -90%;
+			top: 0;
+			right: -80%;
 			background-image: url(../img/right-side_decor_image.png);
-			width: 340px;
-			height: 436px;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 }
@@ -285,12 +292,14 @@ body {
 		&::after {
 			content: "";
 			display: block;
+			width: 250px;
+			height: 350px;
 			position: absolute;
 			top: -55%;
 			right: 0;
 			background-image: url(../img/right-side_decor_image.png);
-			width: 340px;
-			height: 436px;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 
