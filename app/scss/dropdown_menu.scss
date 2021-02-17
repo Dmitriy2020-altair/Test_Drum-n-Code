@@ -1,0 +1,11 @@
+.dropdown-menu {
+	background-color: $text-subtitle-primary-color;
+	max-width: 545px;
+	max-height: 1065px;
+} 
+
+.dropdown-menu__closing-button {
+	width: 20px;
+	height: 20px;
+	background: url(../img/Close_Icon.png);
+}

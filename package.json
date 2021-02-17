@@ -2,7 +2,7 @@
   "name": "drum_n_code",
   "version": "1.0.0",
   "description": "Fisrt task for Drum'n'Code",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "scss",
     "gulp"
   ],
-  "author": " <dmytrokuzmin@ukr.net>",
+  "author": " Dmytro Kuzmin <dmytrokuzmin@ukr.net>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",

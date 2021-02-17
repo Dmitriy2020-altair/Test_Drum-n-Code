@@ -1,6 +1,7 @@
 @import "./reset.scss";
 @import "./fonts.scss";
 @import "./variables.scss";
+@import "./dropdown_menu.scss";
 
 body {
 	box-sizing: border-box;
@@ -26,10 +27,22 @@ body {
 }
 
 .menu__burger {
-	width: 27px;
-	height: 15px;
-	background-image: url(../img/burger_menu.png);
 	margin: 9px 105px 0 0;
+	position: relative;
+	outline: none;
+	&::after {
+		content: "";
+		display: block;
+		width: 27px;
+		height: 15px;
+		// background-color: $background-primary-color;
+		background-image: url(../img/burger_menu.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 .header-content {
@@ -82,7 +95,6 @@ body {
 	.container {
 		max-width: 750px;
 	}
-
 }
 
 @media (max-width: 767px) {
@@ -99,7 +111,6 @@ body {
 		letter-spacing: -1px;
 		margin: 0 15px 100px;
 	}
-	
 }
 
 .introduction-cards__wrapper {
@@ -704,7 +715,6 @@ body {
 		text-align: center;
 		margin-top: 20px;
 		padding-bottom: 70px;
-
 	}
 	.social__link {
 		display: block;
