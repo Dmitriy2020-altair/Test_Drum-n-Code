@@ -1,11 +1,33 @@
 .dropdown-menu {
 	background-color: $text-subtitle-primary-color;
-	max-width: 545px;
-	max-height: 1065px;
+	max-width: 425px;
+	max-height: 970px;
 } 
+
+.dropdown-menu__inner { 
+	max-width: 430px;
+	padding: 33px 60px 60px 60px;
+}
+
 
 .dropdown-menu__closing-button {
 	width: 20px;
 	height: 20px;
 	background: url(../img/Close_Icon.png);
 }
+
+.block-menu { }
+.block-menu__title { }
+.block-menu__list { }
+.block-menu__list-items { }
+.block-menu__link { }
+.block-get-in-touch { }
+.block-get-in-touch__title { }
+.block-get-in-touch__list { }
+.block-get-in-touch__list-items { }
+.block-get-in-touch__link { }
+.block-get-social { }
+.block-get-social__title { }
+.block-get-social__list { }
+.block-get-social__list-items { }
+.block-get-social__link { }
