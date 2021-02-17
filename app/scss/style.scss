@@ -641,6 +641,7 @@ body {
 .contact-content__social-inner {
 	margin: 40px 0 0 100px;
 	display: flex;
+	padding-bottom: 170px;
 }
 .contact-content__social-message {
 	color: #334752;
@@ -701,7 +702,9 @@ body {
 	}
 	.contact-content__social-inner {
 		text-align: center;
-		margin: 20px 0;
+		margin-top: 20px;
+		padding-bottom: 70px;
+
 	}
 	.social__link {
 		display: block;
