@@ -16,8 +16,47 @@
 							<img class="logo__icon" src="./img/Logo.png" alt="picture of logo">
 						</a>
 					</div>
-					<div class="menu">
-						<input class="menu__burger" type="checkbox" id="toggle-button" href="#"></input>
+					<div class="menu-burger">
+						<input class="menu-burger__fake" type="checkbox" id="toggle-button" href="#"></input>
+						<section class="dropdown-menu dropdown-menu--positioned">
+							<div class="dropdown-menu__inner">
+								<label class="closing-button__inner" for="toggle-button">
+									<div class="dropdown-menu__closing-button"></div>
+								</label>
+								<section class="menu">
+									<div class="menu__inner">
+										<h2 class="menu__title">Menu</h2>
+										<ul class="menu__list">
+											<li class="menu__list-items"><a class="menu__link" href="#">Home</a></li>
+											<li class="menu__list-items"><a class="menu__link" href="#">Services</a></li>
+											<li class="menu__list-items"><a class="menu__link" href="#">Portfolio</a></li>
+											<li class="menu__list-items"><a class="menu__link" href="#">About</a></li>
+										</ul>
+									</div>				
+								</section>
+								<section class="get-in-touch">
+									<div class="get-in-touch__inner">
+										<h2 class="get-in-touch__title">Get in Touch</h2>
+										<ul class="get-in-touch__list">
+											<li class="get-in-touch__list-items"><a class="get-in-touch__link" href="#">Contact Me</a></li>
+									</div>
+								</section>
+								<section class="get-social">
+									<div class="get-social__inner">
+										<h2 class="get-social__title">Get Social</h2>
+										<ul class="get-social__list">
+											<li class="get-social__list-items"><a class="get-social__link" href="#">Behance</a></li>
+											<li class="get-social__list-items"><a class="get-social__link" href="#">Dribble</a></li>
+											<li class="get-social__list-items"><a class="get-social__link" href="#">Twitter</a></li>
+										</ul>
+									</div>
+								</section>
+								<footer class="dropdown-menu-footer">
+									<div class="dropdown-menu-footer__inner">©<a class="dropdown-menu-footer__link"  href="#">leon.com</a>2019
+									</div>
+								</footer>
+							</div>
+						</section>
 					</div>
 				</div>
 			</div>
@@ -34,36 +73,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="dropdown-menu ">
-		<div class="dropdown-menu__inner">
-			<label for="toggle-button">
-				<div class="dropdown-menu__closing-button"></div>
-			</label>
-			<section class="block-menu">
-				<h2 class="block-menu__title">Menu</h2>
-				<ul class="block-menu__list">
-					<li class="block-menu__list-items"><a class="block-menu__link" href="#">Home</a></li>
-					<li class="block-menu__list-items"><a class="block-menu__link" href="#">Services</a></li>
-					<li class="block-menu__list-items"><a class="block-menu__link" href="#">Portfolio</a></li>
-					<li class="block-menu__list-items"><a class="block-menu__link" href="#">About</a></li>
-				</ul>
-			</section>
-			<section class="block-get-in-touch">
-				<h2 class="block-get-in-touch__title">Get in Touch</h2>
-				<ul class="block-get-in-touch__list">
-					<li class="block-get-in-touch__list-items"><a class="block-get-in-touch__link" href="#">Contact Me</a></li>
-			</section>
-			<section class="block-get-social">
-				<h2 class="block-get-social__title">Get Social</h2>
-				<ul class="block-get-social__list">
-					<li class="block-get-social__list-items"><a class="block-get-social__link" href="#">Behance</a></li>
-					<li class="block-get-social__list-items"><a class="block-get-social__link" href="#">Dribble</a></li>
-					<li class="block-get-social__list-items"><a class="block-get-social__link" href="#">Twitter</a></li>
-				</ul>
-			</section>
-		</div>
-	</section>
-	<!-- <main class="main">
+	<main class="main">
 		<section class="introduction-cards">
 			<div class="introduction-cards__wrapper">
 				<div class="introduction-card__item">
@@ -224,6 +234,6 @@
 				</div>
 			</div>
 		</section>
-	</footer> -->
+	</footer>
 </body>
 </html>

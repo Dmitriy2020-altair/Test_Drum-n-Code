@@ -1,8 +1,8 @@
 @import "./reset.scss";
 @import "./fonts.scss";
 @import "./variables.scss";
-@import "./dropdown_menu.scss";
 @import "./templates.scss";
+@import "./dropdown_menu.scss";
 
 body {
 	box-sizing: border-box;
@@ -27,16 +27,21 @@ body {
 	height: 30px;
 }
 
-.menu__burger {
+.menu-burger {
+	position: relative;
+}
+
+.menu-burger__fake {
 	margin: 9px 105px 0 0;
 	position: relative;
 	outline: none;
+	cursor: pointer;
 	&::after {
 		content: "";
 		display: block;
 		width: 27px;
 		height: 15px;
-		// background-color: $background-primary-color;
+		background-color: $background-primary-color;
 		background-image: url(../img/burger_menu.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -84,8 +89,8 @@ body {
 	.header__top-inner {
 		justify-content: space-between;
 	}
-	.menu__burger {
-		margin: 9px 15px 0 0;
+	.menu-burger__fake {
+		margin: 9px 23px 0 0;
 	}
 	.logo__link {
 		margin-left: 15px;
@@ -194,7 +199,9 @@ body {
 	font-size: 162px;
 	line-height: 195px;
 	letter-spacing: -8px;
+	margin-top: 45px;
 }
+
 .services__description {
 	color: $text-description-primary-color;
 	font-family: $font-family-primary;
@@ -202,6 +209,7 @@ body {
 	letter-spacing: -1px;
 	margin-top: -70px;
 }
+
 .services-cards__inner {
 	display: flex;
 	flex-wrap: wrap;

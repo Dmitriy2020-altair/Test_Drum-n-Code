@@ -1,33 +1,93 @@
 .dropdown-menu {
 	background-color: $text-subtitle-primary-color;
-	max-width: 425px;
-	max-height: 970px;
-} 
+	min-width: 430px;
+}
 
-.dropdown-menu__inner { 
+.dropdown-menu__inner {
 	max-width: 430px;
 	padding: 33px 60px 60px 60px;
 }
-
 
 .dropdown-menu__closing-button {
 	width: 20px;
 	height: 20px;
 	background: url(../img/Close_Icon.png);
+	margin-bottom: 15px;
+	cursor: pointer;
 }
 
-.block-menu { }
-.block-menu__title { }
-.block-menu__list { }
-.block-menu__list-items { }
-.block-menu__link { }
-.block-get-in-touch { }
-.block-get-in-touch__title { }
-.block-get-in-touch__list { }
-.block-get-in-touch__list-items { }
-.block-get-in-touch__link { }
-.block-get-social { }
-.block-get-social__title { }
-.block-get-social__list { }
-.block-get-social__list-items { }
-.block-get-social__link { }
+.menu__title {
+	@extend %dropdown-menu-title;
+	margin-bottom: 13px;
+}
+
+.menu__link {
+	@extend %dropdown-menu-main-link;
+}
+
+.get-in-touch__title {
+	@extend %dropdown-menu-title;
+	margin: 30px 0 10px;
+}
+
+.get-in-touch__link {
+	@extend %dropdown-menu-secondary-link;
+}
+
+.get-social__title {
+	@extend %dropdown-menu-title;
+	margin: 20px 0 10px 0;
+}
+
+.get-social__link {
+	@extend %dropdown-menu-secondary-link;
+}
+
+.dropdown-menu-footer__inner {
+	color: $text-dropdown-menu-title;
+	font-family: $font-family-primary;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -1px;
+	margin-top: 430px;
+}
+
+.dropdown-menu-footer__link {
+	color: $text-dropdown-menu-title;
+	text-decoration: none;
+	&:hover {
+		color: $text-title-colored;
+	}
+}
+
+.dropdown-menu--positioned {
+	display: none;
+	position: absolute;
+	top: 57px;
+	left: -370px;
+}
+
+#toggle-button:checked ~ .dropdown-menu--positioned {
+	display: block;
+}
+
+@media(max-width: 767px) {
+	.dropdown-menu {
+		background-color: $text-subtitle-primary-color;
+		min-width: 280px;
+	}
+	
+	.dropdown-menu__inner {
+		max-width: 430px;
+		padding: 33px 60px 60px 60px;
+	}
+
+	.dropdown-menu-footer__inner {
+		margin-top: 130px;
+	}
+
+	.dropdown-menu--positioned {
+		left: -265px;
+	}
+		
+}
